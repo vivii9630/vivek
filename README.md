@@ -1,6 +1,6 @@
 # Vivek — Personal Website
 
-A minimalist personal website (GitHub Pages ready), inspired by academic templates like https://anilgogebakan.github.io/ but with original code and styling.
+A minimalist personal website.
 
 ## 🚀 Quick start (GitHub Pages)
 
