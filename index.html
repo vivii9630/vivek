@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vivek | Data Scientist & Researcher</title>
+  <meta name="description" content="Vivek — Data Scientist focusing on RL, NLP, GIS, and multi-objective optimization."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="card profile">
+      <img class="avatar" src="assets/avatar.png" alt="Vivek avatar (placeholder)"/>
+      <h1 class="name">Vivek</h1>
+      <p class="tagline">Data Scientist · RL × NLP × GIS</p>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#cv">CV</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="links">
+        <a href="mailto:example@email.com" aria-label="Email">Email</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        <a href="assets/Vivek_CV.pdf" target="_blank" rel="noopener">CV</a>
+      </div>
+    </div>
+    <footer class="footer">
+      <small>© <span id="year"></span> Vivek. All rights reserved.</small>
+    </footer>
+  </aside>
+
+  <main class="content">
+    <section id="home" class="hero card">
+      <h2>Vivek</h2>
+      <p class="subtitle">Data Scientist in Calgary, working on RL, Bayesian inference, and geospatial AI systems.</p>
+      <p class="blurb">
+        I design agentic RAG systems, multi‑objective RL methods, and GIS analytics for pipeline integrity. 
+        My interests include Bayesian Q‑learning, multi‑armed bandits, spatial language modeling, and
+        production‑grade LLM tools.
+      </p>
+    </section>
+
+    <section id="about" class="card">
+      <h3>About Me</h3>
+      <p>
+        I'm a Data Scientist focused on reinforcement learning (RL), NLP, and GIS. Recent work includes
+        LangGraph‑based multi‑agent RAG, Postgres/pgvector retrieval, and risk analytics for pipeline integrity.
+        I publish on Bayesian Q‑learning for multi‑objective tasks and normalized exploration in bandits.
+      </p>
+    </section>
+
+    <section id="research" class="card">
+      <h3>Research</h3>
+      <ul class="list">
+        <li>
+          <strong>Bayesian Q‑Learning for Multi‑Objective Reward Setting</strong> —
+          Gaussian posterior Q‑values with Thompson Sampling; variance‑reduction convergence tests.
+          <a class="dl" href="#" target="_blank" rel="noopener">PDF</a>
+        </li>
+        <li>
+          <strong>MaxExp‑UCB: Normalized Exploration for High‑Dimensional Bandits</strong> —
+          Theory + experiments on controlled exploration.
+          <a class="dl" href="#" target="_blank" rel="noopener">Preprint</a>
+        </li>
+        <li>
+          <strong>ConBERT‑RL: RL‑guided Hate‑Comment Classification</strong> —
+          Policy‑aware text classification for low‑resource languages.
+          <a class="dl" href="#" target="_blank" rel="noopener">Code</a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="projects" class="card">
+      <h3>Selected Projects</h3>
+      <article class="project">
+        <h4>CENO‑GIS: Agentic Geospatial Chatbot</h4>
+        <p>
+          Streamlit chatbot that maps natural‑language queries to SQL/GeoPandas for geospatial retrieval,
+          integrates Folium/GeoPandas visualizations, and persists memory.
+        </p>
+        <ul class="meta">
+          <li>Stack: Python, GeoPandas, Folium, PostGIS, pgvector</li>
+          <li>Status: Internal prototype</li>
+        </ul>
+      </article>
+      <article class="project">
+        <h4>Pipeline Risk Analytics</h4>
+        <p>
+          Monthly risk score analysis with spatial joins, clustering, and UCB‑based recommendations to stay within safe regions.
+        </p>
+        <ul class="meta">
+          <li>Stack: Python, scikit‑learn, Postgres, Plotly</li>
+          <li>Focus: Corrosion modeling & safe suggestions</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="teaching" class="card">
+      <h3>Teaching</h3>
+      <ul class="list">
+        <li>Guest lectures on RL and multi‑objective optimization</li>
+        <li>Workshops: Building RAG systems with LangGraph + Postgres</li>
+      </ul>
+    </section>
+
+    <section id="cv" class="card">
+      <h3>CV</h3>
+      <p>Grab a PDF version here: <a class="dl" href="assets/Vivek_CV.pdf" target="_blank" rel="noopener">Download CV</a></p>
+    </section>
+
+    <section id="contact" class="card">
+      <h3>Contact</h3>
+      <p>
+        The best way to reach me is via email. I'm open to collaborations in RL for NLP/GIS,
+        agentic tooling, and geospatial decision‑making.
+      </p>
+      <ul class="contact-list">
+        <li>Email: <a href="mailto:example@email.com">example@email.com</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/" target="_blank" rel="noopener">linkedin.com/in/your-handle</a></li>
+        <li>GitHub: <a href="https://github.com/your-handle" target="_blank" rel="noopener">github.com/your-handle</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

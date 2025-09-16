@@ -1,0 +1,105 @@
+/* Minimal clean layout inspired by academic personal sites */
+:root{
+  --bg:#0b0d12;        /* dark background */
+  --card:#11141b;      /* card background */
+  --text:#e6e6e6;
+  --muted:#a6adbb;
+  --accent:#4cc9f0;
+  --border:#1d2330;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.65;
+}
+
+a{color:var(--accent); text-decoration:none;}
+a:hover{text-decoration:underline}
+
+.sidebar{
+  position:fixed;
+  top:0;left:0;bottom:0;
+  width:320px;
+  padding:24px;
+  border-right:1px solid var(--border);
+  overflow:auto;
+  background:linear-gradient(180deg, #0b0d12 0%, #0b0d12ee 60%, #0b0d12 100%);
+}
+
+.content{
+  margin-left:320px;
+  padding:32px;
+  max-width:900px;
+}
+
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:16px;
+  padding:24px;
+  margin-bottom:24px;
+  box-shadow:0 10px 24px rgba(0,0,0,0.25);
+}
+
+.profile{text-align:center}
+.avatar{
+  width:120px; height:120px; border-radius:50%;
+  border:2px solid var(--border);
+  display:block; margin:0 auto 12px auto; background:#222;
+}
+.name{margin:0;font-size:1.6rem;font-weight:700}
+.tagline{margin:4px 0 12px 0;color:var(--muted)}
+
+.nav{
+  display:grid; gap:8px; margin:16px 0;
+}
+.nav a{
+  padding:8px 10px;
+  border-radius:10px;
+  background:#0f131a;
+  border:1px solid var(--border);
+  transition:transform .04s ease;
+}
+.nav a:hover{transform:translateY(-1px)}
+
+.links{display:flex; flex-wrap:wrap; gap:8px; justify-content:center; margin-top:8px}
+.links a{
+  font-size:.95rem;
+  padding:6px 10px;
+  border:1px solid var(--border);
+  border-radius:999px;
+  background:#0f131a;
+}
+
+.footer{margin-top:16px; color:var(--muted); text-align:center}
+
+.hero .subtitle{color:var(--muted); margin-top:4px}
+.blurb{margin-top:8px}
+
+h2,h3,h4{margin:0 0 12px 0}
+h2{font-size:2rem}
+h3{font-size:1.4rem}
+h4{font-size:1.1rem}
+
+.list{padding-left:18px}
+.list li{margin:10px 0}
+.dl{margin-left:8px}
+
+.project .meta{
+  display:flex; gap:18px; flex-wrap:wrap;
+  color:var(--muted); font-size:.95rem; padding-left:18px
+}
+
+.contact-list{padding-left:18px}
+.contact-list li{margin:6px 0}
+
+/* Mobile */
+@media (max-width: 880px){
+  .sidebar{position:static; width:auto; border-right:none}
+  .content{margin:0}
+}
